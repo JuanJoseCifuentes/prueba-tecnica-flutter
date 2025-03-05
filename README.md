@@ -17,7 +17,7 @@ Implementar los botones de Login, Olvidé Contraseña y Crear Contraseña para q
 
 La pantalla del login está funcional, esta para que veas la arquitectura solo debes ageregar la lógica de login al arcihvo 'auth_repositor_impl.dart'
 
-# (Si no usas Cubit puedes implementar la logica directamente en las pantalla)
+## (Si no usas Cubit puedes implementar la logica directamente en las pantallas)
 ## 5
 Implementar una Navigation Bar para cambiar entre 3 pestañas (Home, Notificaciones, Ajustes)
 
