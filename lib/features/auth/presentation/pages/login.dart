@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_prueba_conocimiento/features/auth/presentation/pages/new_account.dart';
+import 'package:flutter_prueba_conocimiento/features/auth/presentation/pages/forgot_password.dart';
 import 'package:flutter_prueba_conocimiento/features/navigation/presentation/pages/home.dart';
 import 'package:flutter_prueba_conocimiento/features/navigation/presentation/widgets/card_table_parents.dart';
+import 'package:flutter_prueba_conocimiento/features/navigation/presentation/widgets/notification_table.dart';
+import 'package:flutter_prueba_conocimiento/features/navigation/presentation/widgets/settings_options.dart';
 
 import '../../../../core/custom_toast.dart';
 import '../../../../core/helper/app_navigator.dart';
@@ -54,7 +58,14 @@ class SignInState extends State<LoginPage> {
                     if (loginState is LoginSuccessState) {
                       // Aquí la lógica que va a ejecutarse cuando sea exitoso
                       print('Success login');
-                      AppNavigator.pushReplacement(context, HomeScreen([const PageTitle(), CardTableParents()]));
+                      AppNavigator.pushReplacement(
+                          context,
+                          HomeScreen([
+                            const PageTitle(),
+                            CardTableParents(),
+                            NotificationTable(),
+                            SettingsOptions()
+                          ]));
                     } else if (loginState is LoginFailureState) {
                       // Aquí la lógica que va a ejecutarse cuando falle
                       print('Entro al error de autenticacion');
@@ -184,6 +195,7 @@ class SignInState extends State<LoginPage> {
   Widget _forgotPasswordButton(BuildContext context) {
     return BasicAppButton(
       onPressed: () {
+        AppNavigator.push(context, ForgotPasswordPage());
       },
       title: 'Olvidé mi contraseña',
     );
@@ -192,12 +204,13 @@ class SignInState extends State<LoginPage> {
   Widget _newAccount(BuildContext context) {
     return InkWell(
       onTap: () {
+        AppNavigator.push(context, NewAccountPage());
       },
       child: Text(
         'Crear una cuenta nueva',
         style: Theme.of(context).textTheme.titleLarge?.copyWith(
               color: Theme.of(context).colorScheme.secondary,
-        ),
+            ),
       ),
     );
   }

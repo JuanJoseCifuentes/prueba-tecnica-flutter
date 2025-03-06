@@ -1,0 +1,2 @@
+D:/Code/Trabajo/prueba-tecnica-flutter/android/app/.cxx/Debug/2w3p5z59/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/Code/Trabajo/prueba-tecnica-flutter/android/app/.cxx/Debug/2w3p5z59/arm64-v8a/CMakeFiles/rebuild_cache.dir

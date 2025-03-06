@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "969143301960",
+    "project_id": "pruebatecnicatech",
+    "storage_bucket": "pruebatecnicatech.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969143301960:android:6f50ff8131b66f8384257d",
+        "android_client_info": {
+          "package_name": "com.botech.flutter_prueba_conocimiento"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFivZQo6dwKA0Q2AAoh4l5H197sgNb0tE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

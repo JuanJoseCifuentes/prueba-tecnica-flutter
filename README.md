@@ -1,7 +1,9 @@
 # flutter_prueba_conocimiento
 Flutter Prueba Conocimiento
 
-
+# PARA VERIFICAR EL LOGIN DE FIREBASE, UTILICE LAS SIGUIENTES CREDENCIALES:
+correo: jcifuentesc03@gmail.com
+contraseña: 12345678
 
 ## 1
 Dejar activas únicamente las plataformas Android y iOS.
